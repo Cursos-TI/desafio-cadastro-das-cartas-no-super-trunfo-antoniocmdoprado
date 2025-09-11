@@ -6,6 +6,7 @@
 // Siga os comentários para implementar cada parte do desafio.
 // Versão 1 - 30/08/2025 - Nível Novato - Cadastro das cartas
 // Versão 2 - 08/09/2025 - Nível Aventureiro - Cálculo da Densidade e PIB Per Capta
+// Versão 3 - 11/09/2025 - Nível Aventureiro - Definindo carta vencedora - 1 atributo
 
 
 int main()
@@ -95,6 +96,26 @@ int main()
   printf("Densidade Demografica ...: %f\n",v_densidade2);
   printf("PIB per Capita ..........: %f\n",v_pib_pcapita2);
   printf("\n");
+
+  //Verificando a carta vencedora
+  //Comparando qtde de pontos turísticos
+  printf("Resultado:\n");
+  printf("\n");
+
+  if (v_pto_turist1 > v_pto_turist2)
+  {
+     printf("Carta 1 com %d pontos turísticos e a vencedora.\n",v_pto_turist1);
+     printf("\n");
+  } else {
+      if (v_pto_turist1 == v_pto_turist2)
+      {
+          printf("Deu empate. As 2 cartas tem %d pontos turísticos.\n",v_pto_turist1);
+          printf("\n");   
+      } else {
+        printf("Carta 2 com %d pontos turisticos e a vencedora.\n",v_pto_turist2);
+        printf("\n");
+      }
+  }
 
   return 0;
 
